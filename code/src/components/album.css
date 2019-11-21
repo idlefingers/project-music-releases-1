@@ -3,17 +3,24 @@
   margin: 10px;
 }
 
-#album-container {
+.album-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: yellow;
+  background-color: rgb(17, 24, 24);
   max-width: 1500px;
 }
 
-#album-title {
+.album-title {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     width: 300px;
+    color: white;
+    font-weight: bold;
 } 
 
+.artist-name {
+  font-weight: normal;;
+  
+
+}
