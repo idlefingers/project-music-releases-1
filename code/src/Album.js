@@ -1,5 +1,6 @@
 import React from 'react'
 import './components/album.css';
+import './components/icons.css';
 /*import data from './data.json' */
 
 /*console.log(data)
@@ -33,6 +34,11 @@ export const Album = (props) => {
         <div>
             <div className="album-cover">
                 <img className="album-img" src={props.image} alt="Album" />
+                <div className="icons">
+                    <img className="icon-heart" src="icons/heart.svg" alt="Heart" />
+                    <img className="icon-play" src="icons/play.svg" alt="Play" />
+                    <img className="icon-dots" src="icons/dots.svg" alt="Dots" />
+                </div>
             </div>
 
             <div className="album-info">

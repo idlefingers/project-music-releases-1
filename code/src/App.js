@@ -3,6 +3,7 @@ import data from './data.json'
 import { Album } from './Album'
 import { Artists } from './Artists'
 import { Header } from './Header'
+
 /*import {Z_ASCII} from 'zlib';*/
 
 console.log(data)
