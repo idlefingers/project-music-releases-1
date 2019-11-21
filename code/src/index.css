@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0px;
   background-color: black;
   color: white; 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -9,6 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: center;
+  display: contents;
 }
 
 code {
@@ -16,17 +17,8 @@ code {
     monospace;
 }
 
-/*#album-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  }
 
-/*.album {
-  background-color: aqua;
-  margin: 10px;
 
-}*/
 
 /*musicFlex-Container . container {
   margin: 20px auto; 
