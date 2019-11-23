@@ -3,6 +3,8 @@
     justify-content: center;
     flex-direction: row;
     display: flex;
+    /* transition: translate(71%, -30%); */
+    
     /* transform: translate(71%, 50%); */
 
     /* display: inline-flex 
@@ -24,7 +26,7 @@
     width: 35px;
     z-index: 3;
     align-self: center;
-    opacity: 0.5;
+    opacity: 0.01;
 }
 
 .icon-heart:hover {
@@ -34,24 +36,25 @@
 }
 
 .icon-play {  
-    height: 60px;
-    width: 60px;
+    height: 30px;
+    width: 30px;
     margin-left: 35px;
     margin-right: 35px;
     align-self: center;
     z-index: 1;
-    opacity: 0.5;
-    filter: alpha(opacity=50);  
-    transition: transform 3s ease-in-out;
+    opacity: 0.01;
+    filter: alpha(opacity=50);     
 }
 
 .icon-play:hover {
-    height: 70px;
-    width: 70px; 
+    height: 30px;
+    width: 30px; 
     opacity: 1.0;
     filter: alpha(opacity=100); 
-    transform: translateZ(70px);
-    /* pointer-events: none;  */
+    transform: scale(1.8);
+    /* transform: translateZ(60px); */
+    transition: transform 0.5s ease-out;
+    
 } 
 
 .icon-dots {
@@ -59,7 +62,7 @@
     width: 35px;
     z-index: 3;
     align-self: center;
-    opacity: 0.5;
+    opacity: 0.01;
 }
 
 .icon-dots:hover {

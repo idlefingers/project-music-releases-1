@@ -12,13 +12,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* width: 100%; */
+  padding: 15px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 
 .album-container {
   display: flex;
@@ -41,6 +41,7 @@ code {
 
 .album-title a {
   color: #fff;
+  text-decoration: none;
 }
 
 .artist-name {
@@ -48,7 +49,6 @@ code {
   font-size: 14px;
   color: #a0a0a0;
   margin-bottom: 10px;
- 
 }
 
 .artist-name a:link {
@@ -63,10 +63,6 @@ code {
 }
 
 .album-img:hover {filter: brightness(30%);}
-/* .icons:hover~.album-img{filter: brightness(30%)} 
-album:hover .album-cover {
-  background: rgba(0,0,0,0.5);
-}  */
 
 .album-cover {
   display: flex;
@@ -75,96 +71,39 @@ album:hover .album-cover {
   width: 300px;
   z-index: 1;
   justify-content: center; 
-  
+  align-self: center; 
 }
 
-/* .album-info a:hover {
+.album-info a:hover {
   color: #fff;
   text-decoration: underline;
-}  
+}   
 
 
- /* .album-img:hover {
-  display: block;
-  position: absolute;
-  color: #fff;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; 
-  background: rgba(0,0,0,0.5);
-  padding: 20px;
-}  */
+/*** Media queries ***/
 
-/* .album:hover .icons {
-  display: block;
-  position: absolute;
-  color: #fff;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; 
-  background: rgba(0,0,0,0.5);
-  padding: 20px;
-} */
-
-/* TEST */
-/* img {
-  width: 450px;
-  z-index: 2;
-  max-width: 95%;;
-}
-
-
-img:hover {
-  filter: brightness (30%);
-} */
-
-
-/*** ADD HOVER & UNDERLINE ***/
-/* 
-@media (min-width: 668px) and (max-width: 1024px) {
+@media (min-width: 375px) and (max-width: 767px) {
   body {
     width: 100%;
     flex-direction: column;
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 768px) and (max-width:834) {
   .album {
-    width: 25%;
-    flex-direction: column;
+    width: 50%;
+    flex-direction: row;
     display: flex;
-
-  }
-}  */
-
-
-/* 
-@media (max-width: 599px) {
-  .album-cover { 
-  width: 100%;
-  flex-direction: column;
-  }
-
-  /* Header {
-  } */
-
-
-/*--- Tablet ---*
-@media (min-width: 600px) and (max-width: 899) {
-  .album-cover { 
-  width: 100%;
-  }
-  Header {
-  
   }
 }
 
-/* --- Desktop --- */
-/* @media (max-width: 1024px) {
-  .album-cover { 
-  width: 50%;
+@media (min-width: 1024px) {
+  .album {
+    width: 25%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
   }
-} */ 
+}  
+
 
