@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   background-color: black;
@@ -7,11 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  /*justify-content: center; */
-  display: contents;   
-  box-sizing: border-box;
-  width: 100%;
+  /* width: 100%; */
 }
 
 code {
@@ -24,78 +24,147 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: black;
-  /* max-width: 1500px; */
+  background-color: black; 
   width: 100%; 
   margin: 0px;
+  /*flex-direction: row*/;
 }
 
 .album-title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
   font-size: 14px;
   color: white;
   font-weight: bold;
-  max-width: 250px;   
+  max-width: 300px;   
+  padding-top: 5px;
 } 
+
+.album-title a {
+  color: #fff;
+}
 
 .artist-name {
   font-weight: normal;
   font-size: 14px;
   color: #a0a0a0;
-  /* padding-top: 0px; */
-  /* padding-bottom: 10px;    */  
+  margin-bottom: 10px;
+ 
 }
+
+.artist-name a:link {
+  color:  #a0a0a0; 
+  text-decoration: none;
+}
+
 
 .album-img {
-  justify-content: space-between;
-  /* margin: 3px; */
+  position: absolute;
+  z-index: 1;
 }
 
-/****** hover and underline ******/
-.album-inf .album-title {
-  color: white;
-  text-decoration: none;
+.album-img:hover {filter: brightness(30%);}
+/* .icons:hover~.album-img{filter: brightness(30%)} 
+album:hover .album-cover {
+  background: rgba(0,0,0,0.5);
+}  */
+
+.album-cover {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  z-index: 1;
+  justify-content: center; 
+  
 }
 
-.album-inf .album-title:hover {
-  text-decoration: none;
-}
-
-album.inf .artist-name{
-  color: white;
-  text-decoration: none;
-}
-
-.album-inf .artist-name:hover{
+/* .album-info a:hover {
+  color: #fff;
   text-decoration: underline;
+}  
+
+
+ /* .album-img:hover {
+  display: block;
+  position: absolute;
+  color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; 
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+}  */
+
+/* .album:hover .icons {
+  display: block;
+  position: absolute;
+  color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; 
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+} */
+
+/* TEST */
+/* img {
+  width: 450px;
+  z-index: 2;
+  max-width: 95%;;
 }
 
-@media (min-width: 667px) and (max-width: 1024) {
-  body {
-    width: 100%;
-    flex-grow: 1;
-    flex-direction: column;
-}
 
-.Header {
-  text-align: left;
-}
-
-/* h1 {
-  padding-left: 0;
+img:hover {
+  filter: brightness (30%);
 } */
 
 
-.album {
-  display: flex;
-  flex-direction: column;  
-  width:45%;
-  padding: 5px;
-  padding-top: none;
+/*** ADD HOVER & UNDERLINE ***/
+/* 
+@media (min-width: 668px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
-img {
-  width: 300px;
-  padding-bottom: 10px;
+@media (min-width: 1025px) {
+  .album {
+    width: 25%;
+    flex-direction: column;
+    display: flex;
+
+  }
+}  */
+
+
+/* 
+@media (max-width: 599px) {
+  .album-cover { 
+  width: 100%;
+  flex-direction: column;
+  }
+
+  /* Header {
+  } */
+
+
+/*--- Tablet ---*
+@media (min-width: 600px) and (max-width: 899) {
+  .album-cover { 
+  width: 100%;
+  }
+  Header {
+  
+  }
 }
-}
+
+/* --- Desktop --- */
+/* @media (max-width: 1024px) {
+  .album-cover { 
+  width: 50%;
+  }
+} */ 
+

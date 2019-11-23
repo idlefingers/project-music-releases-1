@@ -4,30 +4,35 @@ import { Album } from './Album'
 import { Artists } from './Artists'
 import { Header } from './Header'
 
-/*import {Z_ASCII} from 'zlib';*/
-
 console.log(data)
-console.log(Album)
+// console.log(Album)
 
-/** below from Technigo */
-/*export const App = () => {
-  return (
-    <div>
-      <Album />
-      <Header />
-    </div>
-  )
-}*/
 
 export const App = () => {
   return (
     <div>
-      <Header />
+      <div>
+        <Header />
+        {/*<Album /> 
+      <artists /> */}
+      </div>
+
       <section className="album-container">
 
         {data.albums.items.map((item) => {
-          return <Album key={item.id} albumTitle={item.name} image={item.images[1].url} artists={item.artists[0].name} />
-        })}
+          return <Album
+            key={item.id}
+            albumTitle={item.name}
+            albumURL={item.external_urls.spotify}
+
+            image={item.images[1].url}
+            playIconURL={item.external_urls.spotify}
+
+            artists={item.artists[0].name}
+            link={item.external_urls.spotify}
+            artists_link={item.artists[0].external_urls.spotify} />
+
+        })};
 
       </section>
     </div>
