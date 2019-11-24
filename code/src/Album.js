@@ -45,7 +45,7 @@ export const Album = (props) => {
     )
 }
 
-/*** ADD - other artists ***/
+
 
 
 
