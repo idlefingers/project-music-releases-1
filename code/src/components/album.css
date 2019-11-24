@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* width: 100%; */
-  padding: 15px;
+  padding: 20px;
 }
 
 code {
@@ -30,6 +30,39 @@ code {
   /*flex-direction: row*/;
 }
 
+header.header {
+  /* padding-left: 2px; */
+/* text-align: center; */
+/* align-items: center; */
+padding-left: 140px;
+
+}
+
+
+.album-cover {
+  display: flex;
+  flex-direction: column;
+  height: 315px;
+  width: 315px;
+  z-index: 1;
+  justify-content: center; 
+}
+
+.album-img {
+  position: absolute;
+  z-index: 1;
+  align-self: flex-end;
+  
+
+} 
+
+.album-img:hover {filter: brightness(30%);}
+
+.album-info a:hover {
+  color: #fff;
+  text-decoration: underline;
+} 
+
 .album-title {
   font-family: Helvetica;
   font-size: 14px;
@@ -37,6 +70,7 @@ code {
   font-weight: bold;
   max-width: 300px;   
   padding-top: 5px;
+  padding-left: 20px;
 } 
 
 .album-title a {
@@ -49,61 +83,46 @@ code {
   font-size: 14px;
   color: #a0a0a0;
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 
-.artist-name a:link {
-  color:  #a0a0a0; 
-  text-decoration: none;
+ a { 
+    color:  #a0a0a0; 
 }
 
-
-.album-img {
-  position: absolute;
-  z-index: 1;
-}
-
-.album-img:hover {filter: brightness(30%);}
-
-.album-cover {
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  width: 300px;
-  z-index: 1;
-  justify-content: center; 
-  align-self: center; 
-}
-
-.album-info a:hover {
+.artist-name a:hover {
   color: #fff;
   text-decoration: underline;
-}   
+} 
+/* ----- Media queries tablet ----- ***/
 
 
-/*** Media queries ***/
+/* @media (max-width: 669px) {
 
-@media (min-width: 375px) and (max-width: 767px) {
-  body {
-    width: 100%;
-    flex-direction: column;
+
+  .album-cover {
+    height: 280px;
+    width: 280px;
+    width: 35%;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-self: flex-end;
+    
   }
-}
 
-@media (min-width: 768px) and (max-width:834) {
-  .album {
-    width: 50%;
-    flex-direction: row;
-    display: flex;
+  .header.header {
+    text-align: start;
+    padding-left: 10px; 
   }
-}
+}  */
 
+
+
+/* ----- Media queries desktop ----- 
 @media (min-width: 1024px) {
-  .album {
+  .album-cover {
     width: 25%;
     flex-direction: row;
     display: flex;
-    justify-content: space-evenly;
-  }
-}  
-
+    flex-wrap: wrap;*/
 
