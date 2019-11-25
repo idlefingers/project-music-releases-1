@@ -38,22 +38,29 @@ padding-left: 140px;
 
 }
 
+.album {
+  width: 25%;
+}
+
+@media (max-width: 1024px) {
+  .album {
+    width: 50%;
+  }
+}
+
+@media (max-width: 668px) {
+  .album {
+    width: 100%;
+  }
+}
+
 
 .album-cover {
-  display: flex;
-  flex-direction: column;
-  height: 315px;
-  width: 315px;
-  z-index: 1;
-  justify-content: center; 
+  position: relative;
 }
 
 .album-img {
-  position: absolute;
-  z-index: 1;
-  align-self: flex-end;
-  
-
+  width: 100%;
 } 
 
 .album-img:hover {filter: brightness(30%);}
